@@ -64,3 +64,18 @@ for( var i = 0; i < numeri.length; i++){
     
 }
 console.log(somma); */
+
+/* Crea due array di numeri che hanno un numero di elementi diversi.
+Aggiungi elementi all’array che ha meno elementi fino a quando ne avrà tanti quanti l’altro.
+ */
+var numeri = [1, 2, 3, 4, 5, 6,];
+console.log(numeri);
+var numeri1 = [1, 2];
+console.log(numeri1);
+console.log(numeri.length);
+console.log(numeri1.length);
+do {
+    var NumeroRandom = Math.floor(Math.random() * numeri.length)
+    numeri1.push(NumeroRandom);
+} while(numeri1.length < numeri.length);
+console.log(numeri1);
